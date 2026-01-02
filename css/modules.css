@@ -1,1 +1,131 @@
-1
+/* ========================================
+   MODULE CARD
+   ======================================== */
+
+.module-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.module-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    border-color: var(--color-primary);
+}
+
+.module-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.module-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.module-icon.lower { background: rgba(37, 99, 235, 0.1); }
+.module-icon.upper { background: rgba(245, 158, 11, 0.1); }
+.module-icon.tall { background: rgba(16, 185, 129, 0.1); }
+.module-icon.corner { background: rgba(139, 92, 246, 0.1); }
+
+.module-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    font-size: 1.125rem;
+}
+
+.icon-btn:hover {
+    background: var(--color-border);
+}
+
+.icon-btn.danger:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--color-danger);
+}
+
+.module-card-body {
+    margin-bottom: 1rem;
+}
+
+.module-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.module-code {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.module-sizes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.module-sizes span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.module-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.module-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.module-stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.module-stat-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
