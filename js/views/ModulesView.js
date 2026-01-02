@@ -4,6 +4,7 @@
 
 import { showNotification } from '../utils/helpers.js';
 import { Modal } from '../components/Modal.js';
+import { ModuleEditor } from './ModuleEditor.js';
 
 export class ModulesView {
     constructor(state, db) {
@@ -261,12 +262,12 @@ export class ModulesView {
     }
 
     showAddModuleModal() {
-        showNotification('info', 'Функция добавления модуля будет реализована в следующем шаге');
-    }
+    new ModuleEditor(this.state, this.db);
+}
 
-    editModule(id) {
-        showNotification('info', 'Редактор модуля будет реализован в следующем шаге');
-    }
+editModule(id) {
+    new ModuleEditor(this.state, this.db, id);
+}
 
     async cloneModule(id) {
         const module = this.state.getModuleById(id);
