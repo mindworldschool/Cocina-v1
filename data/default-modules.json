@@ -192,6 +192,2399 @@
     "notes": "Стандартный нижний модуль с одной распашной дверью",
     "createdAt": "2025-01-02T00:00:00.000Z",
     "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n1d",
+    "code": "N1D",
+    "name": "Нижний 1 дверь",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "sizeRanges": {
+      "width": { "min": 300, "max": 1200, "step": 50 },
+      "height": { "min": 700, "max": 950, "step": 10 },
+      "depth": { "min": 300, "max": 600, "step": 10 }
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top_crossbar",
+        "name": "Верх (перемычка)",
+        "length": "width - (thickness * 2)",
+        "width": 100,
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door_1",
+        "name": "Фасад (дверь)",
+        "width": "width - 3",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 2,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "shelf_support",
+        "name": "Полкодержатель",
+        "article": "SHELF-SUPP-001",
+        "quantity": 4,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0,
+        "optional": true
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "handle",
+        "name": "Ручка",
+        "article": "HANDLE-001",
+        "quantity": 1,
+        "category": "handle",
+        "unit": "шт",
+        "pricePerUnit": 0,
+        "optional": true
+      }
+    ],
+    "fasteners": [
+      {
+        "id": "confirmat",
+        "name": "Конфирмат 5x70",
+        "article": "CONF-5x70",
+        "quantity": 14,
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "dowel",
+        "name": "Шкант 8x40",
+        "article": "DOWEL-8x40",
+        "quantity": 8,
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "operations": [
+      {
+        "id": "cutting",
+        "name": "Распил ЛДСП",
+        "unit": "рез",
+        "pricePerUnit": 0.5
+      },
+      {
+        "id": "edging",
+        "name": "Кромкование",
+        "unit": "м/п",
+        "pricePerUnit": 1.5
+      },
+      {
+        "id": "assembly",
+        "name": "Сборка модуля",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 15
+      }
+    ],
+    "notes": "Стандартный нижний модуль с одной распашной дверью",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n2d",
+    "code": "N2D",
+    "name": "Нижний 2 двери",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 800,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 3,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top_crossbar",
+        "name": "Верх (перемычка)",
+        "length": "width - (thickness * 2)",
+        "width": 100,
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка",
+        "length": "(width - (thickness * 3)) / 2",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door_1",
+        "name": "Фасад дверь левая",
+        "width": "(width - 3) / 2",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "door_2",
+        "name": "Фасад дверь правая",
+        "width": "(width - 3) / 2",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 4,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с двумя дверями и перегородкой",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n1yf",
+    "code": "N1YF",
+    "name": "Нижний 1 ящик фасад",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank",
+        "name": "Передняя планка",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика",
+        "width": "width - 3",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 2,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 1,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с одним выдвижным ящиком",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n1yf1vi",
+    "code": "N1YF1VI",
+    "name": "Нижний 1 ящик фасад + 1 внутренний ящик",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_1",
+        "name": "Передняя планка верхняя",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_2",
+        "name": "Передняя планка нижняя",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика",
+        "width": "width - 3",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 4,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 2,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с одним фасадным и одним внутренним ящиком",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n2yf",
+    "code": "N2YF",
+    "name": "Нижний 2 ящика фасад",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_1",
+        "name": "Передняя планка верхняя",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_2",
+        "name": "Передняя планка нижняя",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика 1 (верхний)",
+        "width": "width - 3",
+        "height": "(height - 35 - 2) / 2",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_2",
+        "name": "Фасад ящика 2 (нижний)",
+        "width": "width - 3",
+        "height": "(height - 35 - 2) / 2",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 4,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 2,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с двумя выдвижными ящиками",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n3yf",
+    "code": "N3YF",
+    "name": "Нижний 3 ящика фасад",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_1",
+        "name": "Передняя планка 1",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_2",
+        "name": "Передняя планка 2",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_3",
+        "name": "Передняя планка 3",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика 1",
+        "width": "width - 3",
+        "height": "(height - 35 - 4) / 3",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_2",
+        "name": "Фасад ящика 2",
+        "width": "width - 3",
+        "height": "(height - 35 - 4) / 3",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_3",
+        "name": "Фасад ящика 3",
+        "width": "width - 3",
+        "height": "(height - 35 - 4) / 3",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 6,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 3,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с тремя выдвижными ящиками",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n2yf1vi",
+    "code": "N2YF1VI",
+    "name": "Нижний 2 ящика + 1 внутренний ящик",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_1",
+        "name": "Передняя планка 1",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_2",
+        "name": "Передняя планка нижняя",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика 1",
+        "width": "width - 3",
+        "height": "(height - 35 - 2) / 2",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_2",
+        "name": "Фасад ящика 2",
+        "width": "width - 3",
+        "height": "(height - 35 - 2) / 2",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 6,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 3,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с двумя фасадными и одним внутренним ящиком",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n1yf1vi",
+    "code": "N1YF1VI_ALT",
+    "name": "Нижний 1 ящик + 1 внутренний ящик",
+    "category": "lower",
+    "defaultSizes": {
+      "width": 600,
+      "height": 890,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_1",
+        "name": "Передняя планка верхняя",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank_2",
+        "name": "Передняя планка нижняя",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика",
+        "width": "width - 3",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 4,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 2,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Нижний модуль с фасадным и внутренним ящиком",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_p_oven",
+    "code": "P_OVEN",
+    "name": "Пенал под духовку + ящик",
+    "category": "tall",
+    "defaultSizes": {
+      "width": 600,
+      "height": 2200,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "oven_shelf",
+        "name": "Полка под духовку (усиленная)",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top_shelf",
+        "name": "Полка верхняя",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank",
+        "name": "Передняя планка для ящика",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer",
+        "name": "Фасад ящика (нижний)",
+        "width": "width - 3",
+        "height": 200,
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "door_top",
+        "name": "Фасад дверь (верхний)",
+        "width": "width - 3",
+        "height": "height - 900",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 3,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 2,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 1,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "oven_rail",
+        "name": "Рейка для духовки",
+        "article": "OVEN-RAIL-600",
+        "quantity": 2,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Пенал под духовку с нижним ящиком и верхней дверью",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_p_oven_micro",
+    "code": "P_OVEN_MICRO",
+    "name": "Пенал под духовку и микро + ящик",
+    "category": "tall",
+    "defaultSizes": {
+      "width": 600,
+      "height": 2200,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "oven_shelf",
+        "name": "Полка под духовку",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "micro_shelf",
+        "name": "Полка под микроволновку",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top_shelf",
+        "name": "Полка верхняя",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank",
+        "name": "Передняя планка для ящика",
+        "length": "width - (thickness * 2)",
+        "width": 70,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "drawer",
+        "name": "Фасад ящика (нижний)",
+        "width": "width - 3",
+        "height": 200,
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "door_top",
+        "name": "Фасад дверь (верхний)",
+        "width": "width - 3",
+        "height": 600,
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 3,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 2,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Пенал под духовку и микроволновку с нижним ящиком",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_p_shelves",
+    "code": "P_SHELVES",
+    "name": "Пенал дверь + полки",
+    "category": "tall",
+    "defaultSizes": {
+      "width": 600,
+      "height": 2200,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 4,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь",
+        "width": "width - 3",
+        "height": "height - 3",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 3,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "shelf_support",
+        "name": "Полкодержатель",
+        "article": "SHELF-SUPP-001",
+        "quantity": 16,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Пенал с дверью и регулируемыми полками",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_p_dishwasher",
+    "code": "P_DISH",
+    "name": "Пенал Посудомойка + дверь + ящики",
+    "category": "tall",
+    "defaultSizes": {
+      "width": 600,
+      "height": 2200,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf_dish",
+        "name": "Полка под посудомойку",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank",
+        "name": "Передняя планка для ящиков",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 3,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь верхняя",
+        "width": "width - 3",
+        "height": 900,
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_1",
+        "name": "Фасад ящика 1",
+        "width": "width - 3",
+        "height": 250,
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_2",
+        "name": "Фасад ящика 2",
+        "width": "width - 3",
+        "height": 250,
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "drawer_3",
+        "name": "Фасад ящика 3",
+        "width": "width - 3",
+        "height": 250,
+        "quantity": 1,
+        "type": "drawer",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 3,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 6,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Пенал под посудомойку с верхней дверью и 3 внутренними ящиками",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_p_drawers",
+    "code": "P_DRAWERS",
+    "name": "Пенал дверь + 4 внутренних ящика",
+    "category": "tall",
+    "defaultSizes": {
+      "width": 600,
+      "height": 2200,
+      "depth": 560
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "front_plank",
+        "name": "Передняя планка для ящиков",
+        "length": "width - (thickness * 2)",
+        "width": 50,
+        "quantity": 4,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь",
+        "width": "width - 3",
+        "height": "height - 3",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 3,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_slide",
+        "name": "Направляющая для ящика",
+        "article": "BLUM-TANDEM-560",
+        "quantity": 8,
+        "category": "slide",
+        "unit": "пара",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "drawer_box",
+        "name": "Металлический ящик",
+        "article": "BLUM-TANDEMBOX-M",
+        "quantity": 4,
+        "category": "system",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 4,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [],
+    "notes": "Пенал с дверью и 4 внутренними ящиками",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_u_fridge",
+    "code": "U_FRIDGE",
+    "name": "Верхний модуль над холодильником",
+    "category": "upper",
+    "defaultSizes": {
+      "width": 600,
+      "height": 700,
+      "depth": 320
+    },
+    "sizeRanges": {
+      "width": { "min": 500, "max": 900, "step": 50 },
+      "height": { "min": 400, "max": 900, "step": 10 },
+      "depth": { "min": 280, "max": 370, "step": 10 }
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь",
+        "width": "width - 3",
+        "height": "height - 3",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 2,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "shelf_support",
+        "name": "Полкодержатель",
+        "article": "SHELF-SUPP-001",
+        "quantity": 4,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0,
+        "optional": true
+      },
+      {
+        "id": "wall_mount",
+        "name": "Навес для верхнего модуля",
+        "article": "WALL-MOUNT-001",
+        "quantity": 2,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [
+      {
+        "id": "cutting",
+        "name": "Распил ЛДСП",
+        "unit": "рез",
+        "pricePerUnit": 0.5
+      },
+      {
+        "id": "edging",
+        "name": "Кромкование",
+        "unit": "м/п",
+        "pricePerUnit": 1.5
+      },
+      {
+        "id": "assembly",
+        "name": "Сборка модуля",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 10
+      }
+    ],
+    "notes": "Верхний модуль над холодильником с распашной дверью",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_u_standard",
+    "code": "U1D",
+    "name": "Верхний модуль дверь распашная",
+    "category": "upper",
+    "defaultSizes": {
+      "width": 600,
+      "height": 720,
+      "depth": 320
+    },
+    "sizeRanges": {
+      "width": { "min": 300, "max": 1200, "step": 50 },
+      "height": { "min": 350, "max": 900, "step": 10 },
+      "depth": { "min": 280, "max": 370, "step": 10 }
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь",
+        "width": "width - 3",
+        "height": "height - 3",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 2,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "shelf_support",
+        "name": "Полкодержатель",
+        "article": "SHELF-SUPP-001",
+        "quantity": 8,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0,
+        "optional": true
+      },
+      {
+        "id": "wall_mount",
+        "name": "Навес для верхнего модуля",
+        "article": "WALL-MOUNT-001",
+        "quantity": 2,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "handle",
+        "name": "Ручка",
+        "article": "HANDLE-001",
+        "quantity": 1,
+        "category": "handle",
+        "unit": "шт",
+        "pricePerUnit": 0,
+        "optional": true
+      }
+    ],
+    "fasteners": [
+      {
+        "id": "confirmat",
+        "name": "Конфирмат 5x70",
+        "article": "CONF-5x70",
+        "quantity": 12,
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "dowel",
+        "name": "Шкант 8x40",
+        "article": "DOWEL-8x40",
+        "quantity": 8,
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "operations": [
+      {
+        "id": "cutting",
+        "name": "Распил ЛДСП",
+        "unit": "рез",
+        "pricePerUnit": 0.5
+      },
+      {
+        "id": "edging",
+        "name": "Кромкование",
+        "unit": "м/п",
+        "pricePerUnit": 1.5
+      },
+      {
+        "id": "assembly",
+        "name": "Сборка модуля",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 10
+      }
+    ],
+    "notes": "Стандартный верхний модуль с распашной дверью",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_u_hood",
+    "code": "U_HOOD",
+    "name": "Верхний модуль под вытяжку",
+    "category": "upper",
+    "defaultSizes": {
+      "width": 600,
+      "height": 350,
+      "depth": 320
+    },
+    "sizeRanges": {
+      "width": { "min": 500, "max": 900, "step": 50 },
+      "height": { "min": 200, "max": 500, "step": 10 },
+      "depth": { "min": 280, "max": 370, "step": 10 }
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall",
+        "name": "Боковина",
+        "length": "height",
+        "width": "depth",
+        "quantity": 2,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно (с вырезом под вытяжку)",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 0, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "notes": "Требуется вырез под воздуховод"
+      },
+      {
+        "id": "top",
+        "name": "Верх",
+        "length": "width - (thickness * 2)",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "back_wall",
+        "name": "Задняя стенка",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door",
+        "name": "Фасад дверь",
+        "width": "width - 3",
+        "height": "height - 3",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 2,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "wall_mount",
+        "name": "Навес для верхнего модуля",
+        "article": "WALL-MOUNT-001",
+        "quantity": 2,
+        "category": "fastener",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [
+      {
+        "id": "confirmat",
+        "name": "Конфирмат 5x70",
+        "article": "CONF-5x70",
+        "quantity": 8,
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "operations": [
+      {
+        "id": "cutting",
+        "name": "Распил ЛДСП",
+        "unit": "рез",
+        "pricePerUnit": 0.5
+      },
+      {
+        "id": "edging",
+        "name": "Кромкование",
+        "unit": "м/п",
+        "pricePerUnit": 1.5
+      },
+      {
+        "id": "cutout",
+        "name": "Вырез под воздуховод",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 5
+      },
+      {
+        "id": "assembly",
+        "name": "Сборка модуля",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 8
+      }
+    ],
+    "notes": "Верхний модуль под вытяжку с вырезом под воздуховод",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "module_n_corner",
+    "code": "N_CORNER",
+    "name": "Нижний угловой модуль",
+    "category": "corner",
+    "defaultSizes": {
+      "width": 900,
+      "height": 890,
+      "depth": 900
+    },
+    "sizeRanges": {
+      "width": { "min": 800, "max": 1000, "step": 50 },
+      "height": { "min": 700, "max": 950, "step": 10 },
+      "depth": { "min": 800, "max": 1000, "step": 50 }
+    },
+    "corpus": {
+      "material": "LDSP",
+      "thickness": 19,
+      "backWall": {
+        "material": "HDF",
+        "thickness": 3
+      }
+    },
+    "details": [
+      {
+        "id": "sidewall_1",
+        "name": "Боковина 1",
+        "length": "height",
+        "width": "depth",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 0 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "sidewall_2",
+        "name": "Боковина 2",
+        "length": "height",
+        "width": "width",
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 0, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "bottom",
+        "name": "Дно (угловое)",
+        "length": 900,
+        "width": 900,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "notes": "Требуется специальный раскрой под угол"
+      },
+      {
+        "id": "top_crossbar_1",
+        "name": "Верх передний 1",
+        "length": "width - thickness",
+        "width": 100,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "top_crossbar_2",
+        "name": "Верх передний 2",
+        "length": "depth - thickness",
+        "width": 100,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_04"
+      },
+      {
+        "id": "shelf",
+        "name": "Полка угловая",
+        "length": 850,
+        "width": 850,
+        "quantity": 1,
+        "material": "LDSP",
+        "edging": { "top": 1, "bottom": 0, "left": 1, "right": 1 },
+        "edgingType": "PVC_04",
+        "optional": true,
+        "notes": "Специальный раскрой под угол"
+      },
+      {
+        "id": "back_wall_1",
+        "name": "Задняя стенка 1",
+        "length": "height - 5",
+        "width": "width - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      },
+      {
+        "id": "back_wall_2",
+        "name": "Задняя стенка 2",
+        "length": "height - 5",
+        "width": "depth - 5",
+        "quantity": 1,
+        "material": "HDF",
+        "edging": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+      }
+    ],
+    "facades": [
+      {
+        "id": "door_1",
+        "name": "Фасад дверь 1",
+        "width": "(width - 3) / 2",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      },
+      {
+        "id": "door_2",
+        "name": "Фасад дверь 2",
+        "width": "(depth - 3) / 2",
+        "height": "height - 35",
+        "quantity": 1,
+        "type": "door",
+        "material": "MDF",
+        "edging": { "top": 1, "bottom": 1, "left": 1, "right": 1 },
+        "edgingType": "PVC_1"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "hinge",
+        "name": "Петля накладная",
+        "article": "BLUM-71T3550",
+        "quantity": 4,
+        "category": "hinge",
+        "unit": "шт",
+        "pricePerUnit": 0
+      },
+      {
+        "id": "carousel",
+        "name": "Карусель угловая",
+        "article": "CORNER-CAROUSEL-900",
+        "quantity": 1,
+        "category": "system",
+        "unit": "комплект",
+        "pricePerUnit": 0,
+        "optional": true
+      },
+      {
+        "id": "legs",
+        "name": "Ножка регулируемая",
+        "article": "LEG-ADJ-150",
+        "quantity": 6,
+        "category": "leg",
+        "unit": "шт",
+        "pricePerUnit": 0
+      }
+    ],
+    "fasteners": [],
+    "operations": [
+      {
+        "id": "cutting",
+        "name": "Распил ЛДСП",
+        "unit": "рез",
+        "pricePerUnit": 0.5
+      },
+      {
+        "id": "edging",
+        "name": "Кромкование",
+        "unit": "м/п",
+        "pricePerUnit": 1.5
+      },
+      {
+        "id": "corner_cutting",
+        "name": "Сложный раскрой углового дна",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 10
+      },
+      {
+        "id": "assembly",
+        "name": "Сборка углового модуля",
+        "unit": "шт",
+        "quantity": 1,
+        "pricePerUnit": 25
+      }
+    ],
+    "notes": "Угловой нижний модуль с двумя фасадами и возможностью установки угловой карусели",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "updatedAt": "2025-01-02T00:00:00.000Z"
   }
 ]
 ```
