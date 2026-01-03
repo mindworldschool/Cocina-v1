@@ -194,37 +194,3 @@
     "updatedAt": "2025-01-02T00:00:00.000Z"
   }
 ]
-```
-
----
-
-## 📄 13. .gitignore
-```
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Dependency directories
-node_modules/
-
-# IDE
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Local data
-data/local-*.json
-
-# Build
-dist/
-build/
-
-# Env
-.env
-.env.local
