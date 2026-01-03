@@ -96,7 +96,22 @@
                 </div>
 
                 <div class="settings-content">
-                    <p>Настройки в разработке...</p>
+                    <div class="card">
+                        <h3>🗄️ Управление данными</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">
+                            Очистка данных удалит все модули и проекты из localStorage и загрузит данные по умолчанию из файла.
+                        </p>
+                        <button class="btn btn-danger" id="btn-reset-data">
+                            🔄 Сбросить данные и перезагрузить
+                        </button>
+                    </div>
+
+                    <div class="card" style="margin-top: 1.5rem;">
+                        <h3>📊 Информация</h3>
+                        <p><strong>Версия:</strong> 1.0.0</p>
+                        <p><strong>Модулей в базе:</strong> <span id="modules-count">0</span></p>
+                        <p><strong>Проектов:</strong> <span id="projects-count">0</span></p>
+                    </div>
                 </div>
             </div>
         </div>

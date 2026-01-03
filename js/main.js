@@ -70,7 +70,41 @@ class App {
             });
         });
 
+        // Кнопка сброса данных
+        const resetBtn = document.getElementById('btn-reset-data');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', async () => {
+                if (confirm('Вы уверены? Все текущие данные будут удалены и загружены заново из default-modules.json')) {
+                    await this.resetData();
+                }
+            });
+        }
+
         console.log('✅ UI инициализирован');
+    }
+
+    async resetData() {
+        try {
+            showNotification('info', 'Очистка данных...');
+
+            // Очищаем localStorage
+            await this.db.clearAll();
+
+            // Заново загружаем дефолтные данные
+            await this.db.loadDefaultData();
+
+            // Перезагружаем данные в State
+            await this.loadData();
+
+            showNotification('success', 'Данные успешно перезагружены!');
+
+            // Перезагружаем текущий view
+            this.showView('modules');
+
+        } catch (error) {
+            console.error('❌ Ошибка сброса данных:', error);
+            showNotification('error', 'Ошибка при сбросе данных');
+        }
     }
 
     showView(viewName) {
@@ -120,17 +154,31 @@ class App {
                 this.showPlaceholder('pricelist', '💰', 'Прайс-лист в разработке');
                 break;
             case 'settings':
-                this.showPlaceholder('settings', '⚙️', 'Настройки в разработке');
+                this.initSettingsView();
                 break;
         }
 
         console.log(`📄 Загружен view: ${viewName}`);
     }
 
+    initSettingsView() {
+        // Обновляем счетчики
+        const modulesCount = document.getElementById('modules-count');
+        const projectsCount = document.getElementById('projects-count');
+
+        if (modulesCount) {
+            modulesCount.textContent = this.state.getModules().length;
+        }
+
+        if (projectsCount) {
+            projectsCount.textContent = this.state.getProjects().length;
+        }
+    }
+
     showPlaceholder(viewName, icon, text) {
         const container = document.getElementById(`view-${viewName}`);
         const content = container.querySelector('.view-header').nextElementSibling;
-        
+
         if (content && !content.classList.contains('empty-state')) {
             content.innerHTML = `
                 <div class="empty-state">
